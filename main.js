@@ -1,12 +1,12 @@
 let name = document.querySelector('#name')
-let choice = document.querySelector('#input').value.toLowerCase()
 
-document.querySelector('#submitButton').addEventListener('click', getWiz())
+document.querySelector('#submitButton').addEventListener('click', getWiz)
 
 
 async function getWiz() {
+  const wiz = document.querySelector('#input').value.toLowerCase()
   try {
-    const response = await fetch(`https://crudapi-production.up.railway.app/api/${choice}`);
+    const response = await fetch(`https://crudapi-production.up.railway.app/api/${wiz}`);
     const data = await response.json();
     console.log(data);
     
