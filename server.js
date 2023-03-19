@@ -27,6 +27,7 @@ const wizwitches = {
   }
 
 }
+app.use(cors())
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
@@ -43,7 +44,7 @@ app.get('/api/:name', (req, res) => {
   
 })
 
-app.use(cors())
+
 
 app.listen(PORT, () => {
   console.log(`The server is now runing on port ${PORT}! Betta go catch it!`)
