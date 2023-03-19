@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express() 
+const cors = requrie('cors')
 const PORT = 5000
 
 const wizwitches = {
@@ -41,6 +42,8 @@ app.get('/api/:name', (req, res) => {
   }
   
 })
+
+app.use(cors())
 
 app.listen(PORT, () => {
   console.log(`The server is now runing on port ${PORT}! Betta go catch it!`)

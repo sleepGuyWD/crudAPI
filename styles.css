@@ -1,0 +1,26 @@
+#infoSec {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  border: .2rem solid rgb(8, 8, 8);
+  border-radius: 1rem;
+  width: 20%;
+  background: #9bb3f6;
+  box-shadow: 1px 2px 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+#house,
+#wand,
+#patronous {
+  margin-top: 1rem;
+}
+
+#name {
+  margin-top: .5rem;
+}
+
+#patronous {
+  margin-bottom: .5rem;
+}
