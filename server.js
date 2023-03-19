@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express() 
-const cors = requrie('cors')
+const cors = require('cors')
 const PORT = 5000
 
 const wizwitches = {
